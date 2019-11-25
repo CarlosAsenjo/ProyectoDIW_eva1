@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+    background-color: #6ACA6B;
+}
+
+.grey {
+    width: 100%;
+    height: 58px;
+    font-family: 'Roboto', sans-serif;
+    /*justify-content: space-between;*/
+    font-size: 13px;
+    font-weight: 400;
+    text-align: right;
+    line-height: 18px;
+    color: #333333;
+    background-color: #666666;
+    border-bottom: 5px;
+    border-bottom-color: white;
+}
+
+.idioma {}
+
+.grey img {
+    position: relative;
+    float: right;
+    width: 31px;
+    height: 31px;
+}
+
+.black {
+    width: 100%;
+    height: 58px;
+    font-family: 'Roboto', sans-serif;
+    justify-content: space-between;
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #000000;
+    border-bottom: 2vh;
+    border-bottom-color: white;
+}
+
+.black p {
+    float: left;
+}
+
+
+/*Botones*/
+
+.black .sesion {
+    width: 106px;
+    height: 35px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color: #030303;
+    background-color: #6ACA6B;
+    background-repeat: repeat;
+    background-position: left top;
+    border: 2px solid #FFFFFF;
+    border-radius: 19px;
+}
+
+.black .registro {
+    width: 106px;
+    height: 35px;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #333333;
+    background-repeat: repeat;
+    background-position: left top;
+    border: 2px solid #FFFFFF;
+    border-radius: 19px;
+}
+
+input .mail .password {
+    width: 143px;
+    height: 23px;
+    font-family: 'Roboto-Regular';
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+    background-color: #FFFFFF;
+    border: 1px solid #C8C8C8;
+    border-radius: 6px;
+    padding-left: 5px;
+}
