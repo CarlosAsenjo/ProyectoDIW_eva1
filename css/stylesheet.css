@@ -6,23 +6,43 @@ body {
 }
 
 .grey {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     top: 0;
     position: fixed;
     width: 100%;
     height: 4vmax;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    justify-content: flex-end;
+    justify-items: stretch;
     align-items: center;
-    font-size: 1.5vh;
-    font-weight: 400;
-    text-align: right;
-    line-height: 18px;
+    font-family: 'Roboto', sans-serif;
     color: #333333;
+    font-size: 2vh;
+    font-weight: bold;
     background-color: white;
-    border-bottom: 5px;
-    border-bottom-color: white;
     z-index: 1;
+}
+
+.logo {
+    grid-column: 1;
+    justify-self: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.idioma {
+    grid-column: 4;
+}
+
+.soporte {
+    grid-column: 5;
+}
+
+.buscar {
+    grid-column: 6;
 }
 
 .grey img {
@@ -62,8 +82,7 @@ body {
 
 .unete img {
     width: 4.25vw;
-    height: 3.75vh;
-    top: 10%;
+    height: 5vh;
 }
 
 @keyframes unete {
@@ -182,8 +201,9 @@ input .text .password {
 
 .slider {
     margin: auto;
-    margin-top: -0.5%;
     overflow: hidden;
+    background: #6ACA6B;
+    margin-top: -0.2%;
 }
 
 .slider ul {
