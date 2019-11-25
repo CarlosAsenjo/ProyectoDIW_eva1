@@ -1,14 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 body {
-    background-color: #6ACA6B;
+    background-color: white;
 }
 
 .grey {
+    top: 0;
+    position: fixed;
     width: 100%;
-    height: 58px;
+    height: 4vmax;
     font-family: 'Roboto', sans-serif;
-    /*justify-content: space-between;*/
-    font-size: 13px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 1.5vh;
     font-weight: 400;
     text-align: right;
     line-height: 18px;
@@ -18,23 +23,24 @@ body {
     border-bottom-color: white;
 }
 
-.idioma {}
-
 .grey img {
     position: relative;
-    float: right;
-    width: 31px;
-    height: 31px;
+    justify-items: center;
+    margin-right: 5vmax;
+    width: 3vmin;
+    height: 3vmin;
 }
 
 .black {
+    margin-top: 5.9em;
     width: 100%;
-    height: 58px;
+    height: 4vmax;
     font-family: 'Roboto', sans-serif;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     font-size: 13px;
     font-weight: 400;
-    text-align: center;
     line-height: 18px;
     color: #ffffff;
     background-color: #000000;
@@ -42,8 +48,31 @@ body {
     border-bottom-color: white;
 }
 
-.black p {
+
+
+.unete {
     float: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.75vh;
+    position: relative;
+    animation-name: unete;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes unete{
+
+    0%{
+        left: 0%;
+    }
+    50%{
+        left: 8%;
+    }
+
+    100%{
+        left:0%;
+    }
 }
 
 
@@ -51,8 +80,9 @@ body {
 
 .black .sesion {
     width: 106px;
-    height: 35px;
-    font-family: 'Roboto';
+    height: 3.5vh;
+    line-height: 3.5vh;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 12px;
     text-align: center;
@@ -66,8 +96,9 @@ body {
 
 .black .registro {
     width: 106px;
-    height: 35px;
-    font-family: 'Roboto';
+    height: 3.5vh;
+    line-height: 3.5vh;
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 12px;
     text-align: center;
@@ -79,7 +110,7 @@ body {
     border-radius: 19px;
 }
 
-input .mail .password {
+input .text .password {
     width: 143px;
     height: 23px;
     font-family: 'Roboto-Regular';
@@ -90,4 +121,36 @@ input .mail .password {
     border: 1px solid #C8C8C8;
     border-radius: 6px;
     padding-left: 5px;
+}
+/*CODIGO PUESTO JAVI*/
+.slider{
+        
+    margin:auto;
+    margin-top:-0.5%;
+    overflow: hidden;
+    
+}
+.slider ul{
+    display: flex;
+    padding:0em;
+    width: 400%;
+    animation:cambioImagen 20s infinite alternate;
+}
+
+.slider li{
+    list-style: none;
+    width: 100%;
+}
+@keyframes cambioImagen{
+    0%{margin-left: 0%;}
+    20%{margin-left:0%;}
+
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+    
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left:-300%;}
 }
