@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
 body {
-    background-color: white;
+    margin: 0;
+    padding: 0;
+    background-color: #6ACA6B;
 }
 
 .grey {
@@ -18,9 +19,10 @@ body {
     text-align: right;
     line-height: 18px;
     color: #333333;
-    background-color: #666666;
+    background-color: white;
     border-bottom: 5px;
     border-bottom-color: white;
+    z-index: 1;
 }
 
 .grey img {
@@ -32,7 +34,7 @@ body {
 }
 
 .black {
-    margin-top: 5.9em;
+    margin-top: 4%;
     width: 100%;
     height: 4vmax;
     font-family: 'Roboto', sans-serif;
@@ -48,31 +50,32 @@ body {
     border-bottom-color: white;
 }
 
-
-
 .unete {
-    float: left;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.75vh;
+    font-size: 2vh;
     position: relative;
     animation-name: unete;
-    animation-duration: 4s;
+    animation-duration: 6s;
     animation-iteration-count: infinite;
-    animation-timing-function: linear;
+    animation-timing-function: ease-out;
 }
 
-@keyframes unete{
+.unete img {
+    width: 4.25vw;
+    height: 3.75vh;
+    top: 10%;
+}
 
-    0%{
+@keyframes unete {
+    0% {
+        left: -25%;
+    }
+    50% {
         left: 0%;
     }
-    50%{
-        left: 8%;
-    }
-
-    100%{
-        left:0%;
-    }
+    /*100% {
+        left: 0%;
+    }*/
 }
 
 
@@ -122,35 +125,102 @@ input .text .password {
     border-radius: 6px;
     padding-left: 5px;
 }
-/*CODIGO PUESTO JAVI*/
-.slider{
-        
-    margin:auto;
-    margin-top:-0.5%;
-    overflow: hidden;
-    
-}
-.slider ul{
-    display: flex;
-    padding:0em;
-    width: 400%;
-    animation:cambioImagen 20s infinite alternate;
+
+
+/* STYLES SPECIFIC TO FOOTER  */
+
+.footer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: #070617;
 }
 
-.slider li{
+.footer .col {
+    width: 190px;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0px 20px 20px 20px;
+}
+
+.footer .col h1 {
+    margin: 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 17px;
+    padding: 20px 0px 5px 0px;
+    color: rgba(255, 255, 255, 0.2);
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.250em;
+}
+
+.footer .col ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.footer .col ul li {
+    color: #999999;
+    font-size: 14px;
+    font-family: inherit;
+    font-weight: bold;
+    padding: 5px 0px 5px 0px;
+    cursor: pointer;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+}
+
+
+/*CODIGO PUESTO JAVI*/
+
+.slider {
+    margin: auto;
+    margin-top: -0.5%;
+    overflow: hidden;
+}
+
+.slider ul {
+    display: flex;
+    padding: 0em;
+    width: 400%;
+    animation: cambioImagen 20s infinite alternate;
+}
+
+.slider li {
     list-style: none;
     width: 100%;
 }
-@keyframes cambioImagen{
-    0%{margin-left: 0%;}
-    20%{margin-left:0%;}
 
-    25%{margin-left:-100%;}
-    45%{margin-left:-100%;}
-    
-    50%{margin-left: -200%;}
-    70%{margin-left: -200%;}
-
-    75%{margin-left: -300%;}
-    100%{margin-left:-300%;}
+@keyframes cambioImagen {
+    0% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    100% {
+        margin-left: -300%;
+    }
 }
