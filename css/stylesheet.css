@@ -181,7 +181,6 @@ input[type="password"] {
 .slider li {
     list-style: none;
     width: 100%;
-    height: 140.5vh;
 }
 
 @keyframes cambioImagen {
