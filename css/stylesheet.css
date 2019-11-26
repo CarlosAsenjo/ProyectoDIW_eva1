@@ -56,7 +56,7 @@ body {
 
 .black {
     display: grid;
-    grid-template-columns: 2.5fr 0.75fr 0.75fr 0.5fr 0.5fr 1fr;
+    grid-template-columns: 2fr 0.50fr 0.50fr 0.5fr 0.5fr 1fr;
     grid-template-rows: 1fr;
     column-gap: 1%;
     row-gap: 0px;
@@ -103,7 +103,6 @@ input[type="password"] {
     font-family: 'Roboto-Regular';
     font-size: 2vmin;
     color: #000000;
-    text-align: center;
     width: 12vw;
     line-height: 3vmin;
     background-color: #FFFFFF;
@@ -113,11 +112,9 @@ input[type="password"] {
 
 .sesion {
     grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    width: 5.5vw;
-    line-height: 2vmin;
+    width: 7vw;
+    line-height: 3vmin;
+    text-align: center;
     background-color: #6ACA6B;
     border: 2px solid #FFFFFF;
     border-radius: 2vmin;
@@ -126,16 +123,16 @@ input[type="password"] {
 .registro {
     grid-column-start: 5;
     grid-column-end: 6;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    width: 5.5vw;
-    line-height: 2vmin;
+    width: 7vw;
+    line-height: 3vmin;
+    text-align: center;
     background-color: #333333;
     border: 2px solid #FFFFFF;
     border-radius: 2vmin;
 }
 
 .sesion a {
+    top: 2%;
     font-size: 1.5vmin;
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
