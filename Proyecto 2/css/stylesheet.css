@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+body {
+    background: white;
+    margin-top: 0%;
+}
+
+.grey {
+    top: 0;
+    display: grid;
+    grid-template-columns: 1.5fr 2.5fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 0px;
+    row-gap: 0px;
+    position: fixed;
+    width: 100%;
+    justify-items: end;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #333333;
+    font-size: 2vmin;
+    font-weight: bold;
+    background-color: white;
+    z-index: 1;
+}
+
+.logo {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    justify-self: start;
+    margin-left: 5%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 6vmin;
+    font-weight: bold;
+}
+
+.logged {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    justify-self: self-start;
+    align-self: end
+}
+
+.logged p {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    font-size: 2vmin;
+    color: #6ACA6B;
+}
+
+.idioma {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.soporte {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.buscar {
+    grid-column-start: 5;
+    grid-column-end: 6;
+    justify-content: flex-start;
+}
+
+img[name="lupa"] {}
+
+input[name="search"] {
+    font-family: 'Roboto-Regular';
+    font-size: 2vmin;
+    color: #000000;
+    width: 9.5vw;
+    outline: rgb(0, 0, 0);
+    border-radius: 19px;
+}
+
+.grey img {
+    position: relative;
+    justify-items: center;
+    width: 15%;
+}
+
+.black {
+    display: flex;
+    margin-top: 7vmin;
+    width: 100%;
+    height: 8vmin;
+    background-color: #000000;
+}
+
+
+/*TABS CUENTA*/
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 95%;
+    height: 6vmin;
+    top: 20vmin;
+    margin-left: 2.5%;
+    align-self: flex-end;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Roboto-thin', sans-serif;
+    color: #ffffff;
+    font-size: 2.5vmin;
+    font-weight: bold;
+    background-color: #6ACA6B;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+}
+
+.perfil {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.mensajes {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.pagos {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.coches {
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+.promociones {
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+
+/*Contenido de la web*/
+
+.contenido {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    grid-template-rows: repeat(2, 3fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    line-height: 42vh;
+    align-items: center;
+    justify-items: center;
+    background-color: #6ACA6B;
+    border: 1px solid black;
+}
+
+.div1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.div2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.div3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.div4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}

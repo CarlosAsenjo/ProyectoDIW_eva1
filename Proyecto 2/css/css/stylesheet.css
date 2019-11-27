@@ -46,7 +46,7 @@ body {
 .buscar {
     grid-column-start: 5;
     grid-column-end: 6;
-    align-self: center;
+    justify-content: flex-start;
 }
 
 img[name="lupa"] {}
